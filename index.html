@@ -8,15 +8,26 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Fuente de Google Ubuntu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- Friconix iconos -->
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
     <!-- Mi archivo CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
 
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light ">
+      <!-- Smooth scroll a inicio -->
+      <div id="section0"></div>
+
+
+      <!-- Barra de navegacion -->
+      <nav  class="navbar fixed-top  navbar-expand-lg ">
          <div class="container">
-              <a class="navbar-brand"><img src="assets/img/viajes.svg" width="30" height="30"
+              <a class="navbar-brand text-white"><img src="assets/img/viajes.svg" width="30" height="30"
                 alt="Logo del sitio web"> Viajes Chile</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse"
               data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"aria-label="Toggle navigation">
@@ -24,31 +35,306 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
-              <a class="nav-link" href="#">Inicio</a>
+              <a class="nav-link inicio" href="#section0">Inicio</a>
               <li class="nav-item">
-              <a class="nav-link" href="#">Quienes somos</a>
+              <a class="nav-link quienes" href="#section1">Quienes somos</a>
               </li>
               <li class="nav-item">
-              <a class="nav-link" href="#">Destacados</a>
+              <a class="nav-link desta" href="#section2">Destacados</a>
               </li>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link conta" href="#section3">Contacto</a>
             </li>
               </ul>
               </div>
          </div>
       </nav>
     </header>
+
+    <main>
+<!-- Carrusel  -->
+      <div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner pt-5 mt-2">
+            <div class="carousel-item active">
+              <img class="d-block w-100 imgcar" src="assets/img/carousel1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 imgcar" src="assets/img/carousel2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 imgcar" src="assets/img/carousel3.jpg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- div que solo se veran solo en dispositivos pequeños (desde 799 px hacia abajo) -->
+      <div class="imagenesmovil">
+        <h3 class="text-center mt-5">Imagenes de Chile</h3>
+        <img src="assets/img/card1.jpg" alt="">
+        <img src="assets/img/card2.jpg" alt="">
+        <img src="assets/img/card3.jpg" alt="">
+        <img src="assets/img/card4.jpg" alt="">
+
+      </div>
+
+<!-- Smooth scroll a primera seccion -->
+<div id="section1" >
+</div>
+<br>
+      <!-- Contenido -->
+
+      <div class="text-center quienessomos  pt-5 border-bottom border-info pb-3">
+        <h2>¿Quiénes somos?</h2>
+      </div>
+
+      
+
+      <div class="quienessomos container-fluid pt-3">
+        <div class="row">
+          <div class="col col-sm-4 col-md-4 col-lg-4">
+        <div class="bg-info text-center" data-toggle="tooltip" data-placement="top" title="Click al icono">
+
+          <i class="fi-xwsrs3-dot-air-transportation" data-toggle="modal" data-target="#exampleModal1" ></i>            
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam accusamus dolore odio est minima harum ullam necessitatibus recusandae reiciendis vel incidunt ea repellendus fugiat ducimus tenetur, maxime quaerat obcaecati facilis?
+        Nisi aspernatur rem voluptatem deleniti sit debitis dolores sunt quia animi repellat nesciunt vero et eius tempore eveniet vel, nam iure, a incidunt asperiores, soluta nulla perspiciatis maiores. Sint, expedita.
+        Quasi blanditiis asperiores, at illum incidunt nemo possimus cumque hic rem ex excepturi delectus ea eius ipsam quod placeat tempore nobis accusantium alias corporis repellendus, aspernatur quibusdam? Sapiente, ratione necessitatibus.</p>
+          </div>
+          <div class="col col-sm-4 col-md-4 col-lg-4">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci commodi unde atque consequuntur quo deserunt tenetur officiis amet reiciendis? Labore voluptatum ullam ratione rerum alias nostrum rem unde saepe suscipit.
+        Tempore hic eligendi nostrum doloremque a commodi pariatur dignissimos, eos deserunt dolores! Asperiores illum libero porro consectetur ducimus at quia esse dignissimos nisi cumque, debitis explicabo. Explicabo eveniet eligendi iusto.
+        Aut sed at tenetur quidem pariatur. Quidem iusto expedita, saepe odit quasi debitis eum quis aspernatur iste unde dolor sed quaerat! Quasi aperiam eos eaque aut magni unde et quos.</p>
+        <div class="bg-info text-center" data-toggle="tooltip" data-placement="top" title="Click al icono">
+          <i class="fi-xnlus3-bicycle" data-toggle="modal" data-target="#exampleModal2"></i>        </div>
+
+          </div>
+          <div class="col col-sm-4 col-md-4 col-lg-4">
+            <div class="bg-info text-center" data-toggle="tooltip" data-placement="top" title="Click al icono">
+              <i class="fi-xwsus3-map-marker-thin" data-toggle="modal" data-target="#exampleModal3"></i>            
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ea optio consectetur quo porro deleniti, sint, voluptate quibusdam aliquam laboriosam, officiis voluptas? Eum, minima accusamus? Eum repudiandae laudantium vero quod?
+        Officiis aut expedita nisi nulla laborum! Error architecto beatae rerum distinctio similique. Excepturi, a dolor culpa dolore veritatis maxime consectetur sed labore dolorum repellendus dolorem in, dicta repellat et id.
+        Beatae fugit facilis recusandae iusto aliquam ad expedita, dolor at omnis incidunt perspiciatis blanditiis laudantium eaque quisquam alias repellendus quam eligendi consectetur in animi numquam repellat ab neque. Odit, accusantium.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL -->
+
+      <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark" id="exampleModalLabel">PASAJES EN AVION</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-dark">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quos consequatur culpa assumenda, dolorem inventore quibusdam consequuntur alias quidem et odit suscipit vitae maiores quis velit, placeat, earum amet quia.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">Aceptar ???</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark" id="exampleModalLabel">PASAJES EN BICI</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-dark">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sit corrupti nesciunt facere sint possimus dolorum quam? Facilis cumque amet corrupti itaque! Ex harum sapiente voluptates distinctio sequi repellendus deleniti!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark" id="exampleModalLabel">VIAJES TODO INCLUIDO</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-dark">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus delectus iste vel, eum officiis neque nisi minima! Sint enim corporis, non sed magni qui ad. Aut asperiores ratione incidunt sed.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark" id="exampleModalLabel">MODAL DENTRO DE UN MODAL</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-dark">
+              <p>Inception</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      
+      <!-- Seccion destacados con sus cards -->
+      <div>
+        <span id="section2"  ></span>
+      </div>
+      <div class="text-center border-bottom border-info pb-4">
+        <h2  class="destacados">Destacados</h2>
+      </div >
+
+      <div class="card-deck ">
+        <div class="card mb-5 text-white bg-info">
+          <img class="card-img-top" src="assets/img/card1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Paraiso</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          </div>
+        
+        <div class="card mb-5 text-white bg-info ">
+          <img class="card-img-top2" src="assets/img/card2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Desierto</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>   
+          </div>
+        </div>
+      
+        <div class="card mb-5 text-white bg-info">
+          <img class="card-img-top" src="assets/img/card3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Otro Desierto</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            
+          </div>
+        </div>
+      
+        <div class="card mb-5 text-white bg-info">
+          <img class="card-img-top" src="assets/img/card4.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Flora</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            
+          </div>
+        </div>
+     
+    
+      </div>
+    
+  
+    
+
+
+       <!-- Seccion contacto con Typeform -->
+
+  <div id="section3"  class="text-center  border-bottom border-info pt-5">
+    <h2 class="contacto">  <button data-tf-popup="Ktpt5elE" data-tf-size="50" data-tf-iframe-props="title=My typeform" data-tf-medium="snippet" 
+      style="all:unset;
+      font-family:Helvetica,Arial,sans-serif;
+      display:inline-block;
+      max-width:100%;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      background-color: #17a2b8;
+      color:#FFFFFF;
+      font-size:3vw;
+      border-radius:50px;
+      padding:0 1vw;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      padding-top: 1vw;
+      padding-bottom: 1vw;
+      font-weight:bold;
+      height:35px;
+      cursor:pointer;
+      line-height:35px;
+      text-align:center;
+      margin:0;
+      text-decoration:none;
+      cursor: pointer;">
+      CONTACTO</button>
+      <script src="//embed.typeform.com/next/embed.js"></script>
+    </h2>
+  </div>
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="bg-info ">
+      <p class="textofooter">VIAJES CHILE <span class="iconos">
+        
+        <a href="https://www.facebook.com/"><i class="fi-cnsuxm-facebook-circle"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fi-cnsuxm-linkedin"></i> </a>
+        <a href="https://www.twitter.com/"><i class="fi-cnsuxm-twitter-solid"></i></a>
+        <a href="https://www.github.com/"><i class="fi-xnsuxm-github"></i></a>
+
+      </span>
+      </p>
+
+    </footer>
       
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    
     <!-- mi archivo main -->
     <script src="assets/js/main.js"></script>
+
   </body>
 </html>

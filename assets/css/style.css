@@ -1,0 +1,175 @@
+body{
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar-brand {
+    background-color: #17a2b8;
+    border-radius: 30px;
+    border-style: dashed;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+.inicio{
+    background-color: #17a2b8;
+    border-radius: 30px;
+    border-style: dashed;
+    color: #ffffff;
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.quienes{
+    background-color: #17a2b8;
+    border-radius: 30px;
+    border-style: dashed;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.desta{
+    background-color: #17a2b8;
+    border-radius: 30px;
+    border-style: dashed;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.conta{
+    background-color: #17a2b8;
+    border-radius: 30px;
+    border-style: dashed;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 10px;
+    font-weight: bold;
+}
+a:link, a:visited, a:active, a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    color: orange;
+  }
+
+  .navbar-toggler{
+    background-color: #17a2b8;
+    border-radius: 30px;
+    border-color: aquamarine;
+  }
+
+
+
+
+.imgcar{
+    height: 48vw;
+    padding-top: 10px;
+}
+
+h2{
+    font-size: 2vw;
+}
+
+.contacto{
+    margin-top: 160px;
+
+
+}
+button:hover{
+    color: red;
+
+
+}
+.destacados{
+    margin-top: 100px;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+.textofooter{
+    font-size: 3vw;
+    font-family: 'Ubuntu';
+    margin-bottom: auto;
+    padding-left: 10vw;
+    
+}
+
+.iconos{
+    padding-left: 50vw;
+}
+
+.card-deck{
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+
+
+@media screen and (max-width: 1100px){
+    .card-deck{
+        display: grid;
+        width: 80vw;
+        padding-left: 250px;
+        padding-top: 50px;
+        text-align: center;
+        
+    }
+
+    .card-text{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    .card-deck{
+        display: none ;
+
+    }
+
+    .destacados{
+        display: none;
+    }
+
+    .quienessomos{
+        display: none;
+    }
+
+
+    
+}
+
+
+
+@media screen and (min-width: 799px){
+    .imagenesmovil{
+        display: none;
+
+
+}
+}
+
+@media screen and (max-width: 799px){
+    .imagenesmovil img{
+        display: grid;
+        width: 390px;
+        height: 300px;
+        padding-top: 50px;
+        margin: auto;
+
+
+}
+}
+
+
+
+
+
